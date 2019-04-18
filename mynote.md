@@ -1,1 +1,5 @@
 - 类似print("这一天是今年的第%d天" % (sumdays+day))这种行类有计算表达式的，应将表达式用（）括起
+- 如果 list 是一个空的，没有一个元素的列表，使用 list[0]，会出现**IndexError: list index out of range**
+- **copy.copy** 浅拷贝 只拷贝父对象，不会拷贝对象的内部的子对象，效果同[:]。
+- **copy.deepcopy** 深拷贝 拷贝对象及其子对象
+- **print('%d*%d=%d' % (j,i,j*i),end=' ')**，此类格式化输出多个变量，%后为元组
