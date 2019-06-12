@@ -3,3 +3,6 @@
 - **copy.copy** 浅拷贝 只拷贝父对象，不会拷贝对象的内部的子对象，效果同[:]。
 - **copy.deepcopy** 深拷贝 拷贝对象及其子对象
 - **print('%d*%d=%d' % (j,i,j*i),end=' ')**，此类格式化输出多个变量，%后为元组
+- **with open() as foo**，用foo.readlines()后，再用foo.read()无法读取，可能原因：foo.readlines()运行完句柄就自动关闭了？或者是foo.readlines()已经读取到文件最后，句柄之后无内容了，所以再foo.readlines()无内容。
+- **open()**中最好加encoding参数，否则windows系统可能识别不出文件编码
+- **r'e:\documents\'**，windows下的路径名采用此种格式，避免**转义字符（反斜杠）**导致出错
