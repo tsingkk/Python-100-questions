@@ -6,3 +6,14 @@
 - **with open() as foo**，用foo.readlines()后，再用foo.read()无法读取，可能原因：foo.readlines()运行完句柄就自动关闭了？或者是foo.readlines()已经读取到文件最后，句柄之后无内容了，所以再foo.readlines()无内容。
 - **open()**中最好加encoding参数，否则windows系统可能识别不出文件编码
 - **r'e:\documents\'**，windows下的路径名采用此种格式，避免**转义字符（反斜杠）**导致出错
+- **PEP8's E128: continuation line under-indented for visual indent**，避免出现此种警告，可使用以下括号断行写法：
+    ```
+    print(
+        "aaaaa",
+        "vvvvv",
+        "ccccc"
+    )
+- **with open() as foo**，用foo.readlines()后，再用foo.read()无法读取，可能原因：foo.readlines()运行完句柄就自动关闭了？或者是foo.readlines()已经读取到文件最后，句柄之后无内容了，所以再foo.readlines()无内容。
+- **open()**中最好加encoding参数，否则windows系统可能识别不出文件编码
+- **r'e:\documents\'**，windows下的路径名采用此种格式，避免**转义字符（反斜杠）**导致出错
+- **浮点数取整**，int():向下取整，round()：四舍五入，ceil()：向上取整
