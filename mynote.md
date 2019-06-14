@@ -17,3 +17,4 @@
 - **open()**中最好加encoding参数，否则windows系统可能识别不出文件编码
 - **r'e:\documents\'**，windows下的路径名采用此种格式，避免**转义字符（反斜杠）**导致出错
 - **浮点数取整**，int():向下取整，round()：四舍五入，ceil()：向上取整
+- **中文汉字的unicode编码**范围是u'\u4e00'~u'\u9fff'
