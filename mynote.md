@@ -19,3 +19,7 @@
 - **浮点数取整**，int():向下取整，round()：四舍五入，ceil()：向上取整
 - **中文汉字的unicode编码**范围是u'\u4e00'~u'\u9fff'
 - **set()函数**，最多只能有一个参数，为可迭代对象，如列表、字符串等
+- **逆序**：
+    - `list.reverse()`无返回值，将list逆序，就地改变，所以`list = list.reverse()`此种写法会返回错误。
+    - `reversed(seq)`返回将seq逆转后的迭代器，seq为要转换的序列，可以是 tuple, string, list 或 range。
+- **list(seq).reverse()**,此种写法返回空值。只能先`n = list(seq)`，再`n.reverse()`.
