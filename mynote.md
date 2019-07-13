@@ -22,4 +22,6 @@
 - **逆序**：
     - `list.reverse()`无返回值，将list逆序，就地改变，所以`list = list.reverse()`此种写法会返回错误。
     - `reversed(seq)`返回将seq逆转后的迭代器，seq为要转换的序列，可以是 tuple, string, list 或 range。
-- **list(seq).reverse()**,此种写法返回空值。只能先`n = list(seq)`，再`n.reverse()`.
+    - `print(seq[::-1])`可以将seq逆序打印，但不改变seq内部元素顺序。
+- **list(seq).reverse()**,此种写法返回空值。只能先`n = list(seq)`，再`n.reverse()`。
+- **'\033 [显示方式；前景色；背景色 m' + 打印内容 + '\033[0m'**，用于终端中输出彩色字体。
