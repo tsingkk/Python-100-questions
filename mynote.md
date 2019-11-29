@@ -47,3 +47,4 @@
     >>> eval("n + 4")
     85
     ```
+- **str.join(sequence)**，该字符串方法，以 str 连接序列 sequence 中的元素。
